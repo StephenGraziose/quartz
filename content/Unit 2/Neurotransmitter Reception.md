@@ -1,0 +1,16 @@
+- Receptor subtypes
+	- There are multiple receptor subtypes for each neurotransmitter
+		- Ex: Acetylcholine (ACh) (See below)
+- **Receptor Agonists**
+	- These are molecules that activate neurotransmitter receptors
+		- Ex: Nicotine, muscarine, ACh
+- **Receptor Antagonists**
+	- These are molecules that block neurotransmitter receptors
+		- Ex: Curare, atropine
+- There are two mechanisms of antagonism:
+	- **Competitive Antagonists**
+		- Physically block the ligand-binding site
+			- Can be overcome potentially if there are enough real neurotransmitters present
+	- **Allosteric (Noncompetitive) Antagonists**
+		- Bind to the allosteric site of the receptor, causing a conformational change that blocks the ligand-binding site
+			- Cannot be overcome based on real neurotransmitter concentration

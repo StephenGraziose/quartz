@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Lecture 6 - Resting Membrane Potential (Part I)</title>
+  <style>
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+    sans-serif;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      background-color: #f0f0f0;
+      padding: .2em .4em;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      background-color: #f0f0f0;
+      padding: 1em;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Lecture 6 - Resting Membrane Potential (Part I)</h1>
+</header>
+<p><br />
+<strong>Resting Membrane Potential (Part I)</strong></p>
+<ul>
+<li><p>Why are we learning about resting membrane potential?</p>
+<ul>
+<li><p>Ions are <u>unevenly</u> distributed between the inside and
+outside of the cell</p></li>
+<li><p>The cell membrane is not equally permeable to all ions</p></li>
+<li><p>The cell membrane has an electric potential at rest due to how
+cellular ion flow works</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Neuronal Membrane Potential</strong></p>
+<ul>
+<li><p>The membrane is <u>polarized</u> at rest</p>
+<ul>
+<li><p>Positive and negative poles exist across the membrane</p></li>
+<li><p><u>The intracellular environments of neurons are more negatively
+charged than the extracellular environments of neurons</u></p>
+<ul>
+<li><p><u>Cytosol is negatively charged</u></p></li>
+<li><p><u>ECM is positively charged</u></p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Membrane potential = Vm</p>
+<ul>
+<li><p>Vm = Vinside - Voutside</p></li>
+<li><p>Vm = -50mV to -70mV</p>
+<ul>
+<li>Varies based on organism and cell type, but usually will be referred
+to as -65mV</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Electrical potential (V)</strong></p>
+<ul>
+<li><p>Measured in voltage</p>
+<ul>
+<li>Voltage is measured in millivolts for neurons (mV)</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Electrical potential is essentially the potential to generate an
+electrical current</p>
+<ul>
+<li><p>The plasma membrane is equivalent to a battery</p></li>
+<li><p>If you were to open up a bridge between the intracellular and
+extracellular space, ions would flow between these spaces</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Ion movement</p>
+<ul>
+<li><p>Two forces in particular are acting on ions to control ion
+movement:</p>
+<ul>
+<li><p><strong>Chemical forces</strong></p>
+<ul>
+<li>Flow down chemical concentration gradients</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Electrical forces</strong></p>
+<ul>
+<li><p>Like charges repel</p></li>
+<li><p>Opposite charges attract</p></li>
+<li><p>Electrostatic interactions</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>These forces can overcome each other based on their
+strengths</p></li>
+<li><p><strong>Electrical current (I)</strong></p>
+<ul>
+<li><p>Movement of charge</p></li>
+<li><p>Measured in milliamperes in neurons and cells (mA)</p></li>
+<li><p>The current direction = <u>The direction of the flow of positive
+charge</u></p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Membrane signals</p>
+<ul>
+<li><p><strong>Resting potential</strong></p>
+<ul>
+<li><p>The cell membrane at rest</p></li>
+<li><p>Cells are normally just polarized at rest</p></li>
+<li><p>The leak channels do not form this, they instead just maintain
+it</p></li>
+<li><p>This is actually formed by chemical and electrostatic
+forces</p></li>
+<li><p>~-65mV</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Hyperpolarization</strong></p>
+<ul>
+<li><p><u>Outward current</u></p></li>
+<li><p><u>An increase in negative charge</u> (makes the intracellular
+and extracellular space even more polarized)</p>
+<ul>
+<li><p>Moving <u>positive charges outside</u> of the cell</p></li>
+<li><p>Moving <u>negative charges into</u> the cell</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Depolarization</strong></p>
+<ul>
+<li><p><u>Inward current</u></p></li>
+<li><p><u>An increase in positive charge</u> (makes the intracellular
+and extracellular space less polarized)</p>
+<ul>
+<li><p>Moving <u>positive charges into</u> the cell</p></li>
+<li><p>Moving <u>negative charges outside of</u> the cell</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Graded Potentials (Passive Potentials)</strong></p>
+<ul>
+<li><p>Proportionate to input</p>
+<ul>
+<li>However many ions go in or out affects the strength and size of the
+graded potential</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Passively propagated</p></li>
+<li><p>Caused by ions channels and general ion transport</p></li>
+<li><p>Graded means that the size can change and vary based on how many
+ions are making the movement</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Action Potentials</strong></p>
+<ul>
+<li><p>All or nothing</p>
+<ul>
+<li>Summation of graded potentials at the axon hillock</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Same size, same shape</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Ion concentration gradients</p>
+<ul>
+<li><p>Membrane potential <u>due to different intracellular and
+extracellular ion concentrations</u></p></li>
+<li><p>There are different concentrations of ions in cells:</p>
+<ul>
+<li><p><strong>Na+</strong></p>
+<ul>
+<li><p><u>Higher concentration outside the cell</u></p></li>
+<li><p>Inward flow</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Cl-</strong></p>
+<ul>
+<li><p><u>Higher concentration outside the cell</u></p></li>
+<li><p>Inward flow</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>K+</strong></p>
+<ul>
+<li><p><u>Higher concentration inside of the cell</u></p></li>
+<li><p>Outward flow</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Ca2+</strong></p>
+<ul>
+<li><p><u>MUCH higher concentration outside the cell</u></p></li>
+<li><p>Very low inside of the cell</p></li>
+<li><p>Inward flow</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Neurons are salty bananas</p></li>
+<li><p>Ions do not always follow their concentration gradients due to
+the fact that they face electrostatic forces too</p></li>
+<li><p>[K+]inside &gt; [K+]outside:</p>
+<ul>
+<li><p>K+ pumped into neurons</p></li>
+<li><p>Extracellular K+ uptake by astrocytes</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>[Na+]inside &lt; [Na+]outside:</p>
+<ul>
+<li>Na+ pumped out of neurons</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Low [Cl-]inside:</p>
+<ul>
+<li>Cl- pumped out of neurons</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Low [Ca2+]inside:</p>
+<ul>
+<li>Ca2+ stored in the smooth ER</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>The reason why the intracellular space is so negatively charged
+even though there is tons of chloride outside of the cell is due to the
+fact that there are many large anions inside of the cell</p>
+<ul>
+<li>Include proteins and other molecules</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Leak currents</p>
+<ul>
+<li><p>Potassium leak channels:</p>
+<ul>
+<li><p>Permeability to K+</p>
+<ul>
+<li><p>Potassium diffusion is OUTWARDS</p></li>
+<li><p>Leak current --&gt; K+ outwards --&gt; outward ionic current
+(IK)</p>
+<ul>
+<li>IK = Potassium current (format is used for other currents too)</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Redistribution of charge</p>
+<ul>
+<li><p>Creates a negative electrical potential</p></li>
+<li><p>Creates a negative electrical gradient</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Astrocytes only have K+ leak channels in their membranes</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Ion Equilibrium Potential</p>
+<ul>
+<li><p>An ion is at equilibrium when:</p>
+<ul>
+<li><p><strong>Electrical gradient = Chemical gradient</strong></p>
+<ul>
+<li><p>This is expressed by the <strong>Nernst Equation</strong></p>
+<ul>
+<li><p>Remember this motherfucker?</p>
+<ul>
+<li><p><strong>E = RT/(ZF)(ln([Ion]outside/[Ion]inside)</strong></p>
+<ul>
+<li><p>E = Equilibrium potential</p>
+<ul>
+<li>Electrical force that is acting on the ion to overcome the
+concentration gradient</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>R = Gas constant</p></li>
+<li><p>T = Temperature</p></li>
+<li><p>F = Faraday's constant</p></li>
+<li><p><u>Z = Ion charge</u></p>
+<ul>
+<li>Chloride is -1</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Log(1) = 0</p></li>
+<li><p>Log(&lt;1) = negative</p>
+<ul>
+<li>Need a negative intracellular environment to overcome concentration
+gradient</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Log(&gt;1) = positive</p>
+<ul>
+<li>Need a positive intracellular environment to overcome concentration
+gradient</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><u>Equilibrium means that the electrical potential exactly
+balances against the concentration gradient of the ion</u></p></li>
+<li><p><strong>Nernst Potential</strong> = Ion Equilibrium
+Potential</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Chloride ions do not have much electrostatic driving potential
+because its equilibrium potential (-65mV) is approximately equal to the
+resting membrane potential (also about -65mV)</p></li>
+<li><p>Average ion equilibrium potentials:</p>
+<ul>
+<li><p>EK ~= -80mV to -90mV</p>
+<ul>
+<li>Potassium ions want to leave the cell. To avoid this, the cell needs
+a strong negative charge to pull them back inwards</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>ENa =~ +60mV to +65mV</p>
+<ul>
+<li>Sodium ions want to enter the cell. To avoid this, the cell needs a
+strong-ish positive charge to repel them back outwards</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>ECl ~= -65mV to -70mV</p>
+<ul>
+<li>Eh, almost the exact same as the resting membrane potential of the
+neuron</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>ECa ~= +250mV</p>
+<ul>
+<li>Calcium ions want to enter the cell. To avoid this, the cell needs a
+super strong positive charge to repel them back outwards</li>
+</ul></li>
+</ul></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+    sans-serif;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      background-color: #f0f0f0;
+      padding: .2em .4em;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      background-color: #f0f0f0;
+      padding: 1em;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p><br />
+<strong>Cell Biology of Neurons</strong></p>
+<ul>
+<li><p>Cells have various structures that aid them in functioning
+properly</p>
+<ul>
+<li><p>Neurons have very unique properties and functions:</p>
+<ul>
+<li><p>They are excitable</p>
+<ul>
+<li>Contain electrical activity</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>They have a unique morphology</p></li>
+<li><p>They perform protein trafficking</p>
+<ul>
+<li>Axonal transport</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>They contain unique structural proteins</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Cell body</p>
+<ul>
+<li><p>Gene expression and protein synthesis</p>
+<ul>
+<li><p>Occurs through a few locations, including:</p>
+<ul>
+<li><p>Nucleus</p></li>
+<li><p>Ribosomes</p></li>
+<li><p>Rough endoplasmic reticulum (RER)</p>
+<ul>
+<li><p>Rough means that it has ribosomes located along the membrane</p>
+<ul>
+<li>Studded</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Used for protein transport and partial modification</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Golgi Apparatus</p>
+<ul>
+<li><p>Used for protein and cargo packaging through certain
+modifications</p>
+<ul>
+<li>Protein glycosylation</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Essentially an extension of the ER</p></li>
+<li><p>Performs vesicle formation</p>
+<ul>
+<li><p>Creates lysosomes</p></li>
+<li><p>Creates secretory vesicles</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Transcription (mRNA synthesis)</p>
+<ul>
+<li><p>Occurs in the nucleus</p></li>
+<li><p>This is the process where DNA is transcribed into messenger RNA
+(mRNA)</p></li>
+<li><p>mRNA is trafficked out of the nuclear pores and travels into the
+cytoplasm</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Translation (Protein synthesis)</p>
+<ul>
+<li><p>Occurs in the ribosomes of the cell bodies, either in the
+cytoplasm or on the RER</p>
+<ul>
+<li><p>Free ribosomes synthesize cytosolic (free) proteins</p>
+<ul>
+<li>Just chill out in the cytoplasm and do things</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>RER ribosomes synthesize membrane-associated proteins</p>
+<ul>
+<li><p>Proteins are destined to be membrane-bound and will be found in
+the plasma</p></li>
+<li><p>membrane (or another membrane within the cell)</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>mRNA and tRNA work together at the ribosome to generate amino
+acids, which are subsequently linked together and form polypeptides</p>
+<ul>
+<li>You remember this shit from genetics</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>After polypeptide synthesis concludes, the protein is trafficked
+into its final location</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Protein classes</p>
+<ul>
+<li><p><strong>Cytosolic proteins</strong></p>
+<ul>
+<li><p>Created by free ribosomes</p></li>
+<li><p>Two types:</p>
+<ul>
+<li><p><strong>Fibrillar proteins</strong></p>
+<ul>
+<li><p>Used in the cytoskeleton</p></li>
+<li><p>Provides structural support</p></li>
+<li><p>Actin, myosin</p></li>
+<li><p>Creates the morphology of the neurons too</p>
+<ul>
+<li>Dendritic spines and the shape of the dendrites, etc.</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Enzymes</strong></p>
+<ul>
+<li><p>Metabolic triggers</p></li>
+<li><p>Are basically biological catalysts for chemical reactions</p>
+<ul>
+<li>Proteins that essentially do shit</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Ex: Phosphorylate and dephosphorylate shit</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Nuclear and mitochondrial proteins</strong></p>
+<ul>
+<li><p>Translocated to the nucleus/mitochondria</p>
+<ul>
+<li>Ex: Transcription factors, DNA polymerase, RNA polymerase, etc.</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Membrane-associated proteins</p>
+<ul>
+<li><p>Synthesized by RER-associated ribosomes</p></li>
+<li><p>Three types:</p>
+<ul>
+<li><p><strong>Membrane-attached proteins</strong></p>
+<ul>
+<li><p><strong>Integral proteins</strong></p>
+<ul>
+<li><p>Embedded within the membrane</p>
+<ul>
+<li>Span the length of the plasma membrane</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Are <strong>amphipathic</strong></p>
+<ul>
+<li>Semi polar semi nonpolar (# make sure this is accurate)</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Ex: Ion channel, carrier protein</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Peripheral proteins</strong></p>
+<ul>
+<li><p>Bound to integral proteins and are on one specific end of the
+plasma membrane<br />
+</p></li>
+<li><p>Ex: Receptor proteins, G-protein in a GPCR,</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>ER proteins</strong></p>
+<ul>
+<li><p>Proteins present in the ER required for basic ER functions</p>
+<ul>
+<li><p>Ex: Calcium ion channels</p>
+<ul>
+<li>Remember that the smooth ER is responsible for the storage of
+calcium ions</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Will be deposited into the ER membrane and just chill there</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Proteins contained within vesicles and
+lysosomes</strong></p>
+<ul>
+<li>Ex: <strong>Secretory products, enzymes</strong></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Dendrites and Axons</p>
+<ul>
+<li><p>Dendritic/Axonal projections</p>
+<ul>
+<li><p>Occurs over very long distances</p>
+<ul>
+<li>Some of your neurons are some of the longest cells of the body due
+to these projections</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Protein transport mechanisms are required for molecules to travel
+these distances</p>
+<ul>
+<li>Western Blots and other mechanisms are used to study protein
+transport to figure out how specific proteins operate and move around in
+neurons</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Cytoskeleton</p>
+<ul>
+<li><p>Comprised of 3 specific fibrillar proteins:</p>
+<ul>
+<li><p><strong>Microtubules</strong></p>
+<ul>
+<li><p>Comprised of <strong>tubulin</strong></p></li>
+<li><p>Create a nice straight pathway to formulate a highway for
+proteins to travel across</p></li>
+<li><p>Dynamic instability</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Neurofilaments</strong></p>
+<ul>
+<li><p>Comprised of <strong>cytokeratins</strong></p></li>
+<li><p>Intermediate in diameter</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Microfilaments</strong></p>
+<ul>
+<li><p>Comprised of <strong>actin</strong></p></li>
+<li><p>Scattered throughout</p></li>
+<li><p>Dynamic instability</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Axonal Transport</p>
+<ul>
+<li><p>Axonal transport has 3 different forms, and is <u>responsible for
+protein transport along the axons</u>:</p>
+<ul>
+<li><p><strong>Fast Anterograde Axonal Transport:</strong></p>
+<ul>
+<li><p>Synaptic vesicles and secretory granules use this to reach the
+axon terminals</p>
+<ul>
+<li>Essential for neurotransmitter operation</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>ATP dependent</p>
+<ul>
+<li><p>This is a format of active transport</p></li>
+<li><p>ATP powers this transport</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Kinesin</strong> is a motor protein involved in this
+process</p>
+<ul>
+<li><p>Kinesin uses ATP to essentially "walk" across the
+microtubules</p></li>
+<li><p>Kinesin can travel across microtubules about
+<u>~400mm/day</u></p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Moves from <u>cell body to axon terminal</u></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Retrograde Axonal Transport:</strong></p>
+<ul>
+<li><p>Degradation/recycling of proteins back into the cell
+body</p></li>
+<li><p>Basically the opposite of anterograde axonal transport</p></li>
+<li><p><u>Moves from axon terminal to cell body</u></p></li>
+<li><p><strong>Dynein</strong> is a motor protein involved in this
+process</p></li>
+<li><p>Fast as well, but not as fast as fast anterograde axonal
+transport</p>
+<ul>
+<li>Dynein moves about 2/3rd of the speed along the microtubules as
+kinesin does</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>This is a format of active transport too</p>
+<ul>
+<li>Dynein requires ATP to function</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Slow Axoplasmic Flow (Anterograde):</strong></p>
+<ul>
+<li><p>Cytosolic proteins (enzymes, cytoskeleton)</p></li>
+<li><p><u>Passive transport</u> through the cytoplasm</p>
+<ul>
+<li><p>Flow of molecules down their concentration gradients</p>
+<ul>
+<li><p>It is anterograde because there are more proteins in the cell
+body than the axon terminals usually</p></li>
+<li><p><u>Goes from cell body to axon terminal</u></p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Very slow</p>
+<ul>
+<li>0.2mm - 0.5mm of travel/day</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Cellular Energy</p>
+<ul>
+<li><p><strong>Cellular respiration</strong></p>
+<ul>
+<li><p>This is the process for the formation of <strong>ATP</strong></p>
+<ul>
+<li><p>ATP is a major cellular energy source</p>
+<ul>
+<li><p>Used for many cellular processes:</p>
+<ul>
+<li><p>Phosphorylation of proteins (kinase activity)</p>
+<ul>
+<li>Adding phosphate groups to proteins</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Dephosphorylation of proteins (phosphatase activity)</p>
+<ul>
+<li>Removing phosphate groups from proteins</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Occurs within the mitochondria</p>
+<ul>
+<li>The mitochondria is the US Stock Exchange of the cell</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Exocytosis</strong></p>
+<ul>
+<li><p>Vesicle fusion to the plasma membrane</p>
+<ul>
+<li><p>This is a format of active transport too</p></li>
+<li><p>Secretion of proteins in vesicle lumen into the extracellular
+space</p>
+<ul>
+<li>Stuff goes from inside of the cell to outside of the cell</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>This is a form of chemical transmission</p></li>
+<li><p><strong>Insertion of vesicle membrane proteins into the plasma
+membrane</strong></p>
+<ul>
+<li><p>Ex: Receptors</p></li>
+<li><p>This can occur within the dendritic spines or the axon
+terminal</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>This is the basis of neurotransmitter activity</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Golgi apparatus generates the vesicles required for this process to
+occur</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Endocytosis</strong></p>
+<ul>
+<li><p>Vesicle fusion to the plasma membrane too</p>
+<ul>
+<li>Also another format of active transport</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Cellular uptake of molecules through vesicles</p>
+<ul>
+<li>Occurs through rather specific procedures</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Another essential aspect of cellular transport for proteins and
+other molecules<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</li>
+</ul></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,4 @@
+---
+tag: Lecture
+---
+See [[Syllabus]]

@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+    sans-serif;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      background-color: #f0f0f0;
+      padding: .2em .4em;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      background-color: #f0f0f0;
+      padding: 1em;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p><br />
+<strong>The Membrane and Ion Channels</strong></p>
+<ul>
+<li><p>Why are we learning about the membrane and ion channels?</p>
+<ul>
+<li><p><strong>Plasma membrane</strong></p>
+<ul>
+<li><p>Separates the inside and outside of a cell</p></li>
+<li><p>Contains structures to allow materials inside and outside of the
+cell</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Ion channels</strong></p>
+<ul>
+<li><p>Allow charged particles (ions) to cross the cell
+membrane</p></li>
+<li><p>Generates electrical potentials</p>
+<ul>
+<li>The difference between charges across a membrane</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Movement of ions essentially creates electricity</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>This is all essential towards how neurons are electrically excitable
+and how they communicate and create signals</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Ionic Environments</p>
+<ul>
+<li><p>Intracellular ionic environment</p>
+<ul>
+<li>The ionic environment within a cell</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Extracellular ionic environment</p>
+<ul>
+<li>The ionic environment outside of and between cells</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Aqueous</p>
+<ul>
+<li><p>Immersed in water</p>
+<ul>
+<li><p>Polar molecule</p>
+<ul>
+<li><p>Has positive and negative electrostatic poles</p>
+<ul>
+<li>Asymmetrical charge distribution</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Salts</p>
+<ul>
+<li><p>NaCl, KCl, CaCl2</p>
+<ul>
+<li><p>These are compounds that are able to dissociate into ionic
+components</p>
+<ul>
+<li>K+, Cl-, Ca2+, Na+</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Dissolve in H2O</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Phospholipid Bilayer</p>
+<ul>
+<li><p><strong>Phospholipid</strong></p>
+<ul>
+<li><p>Chains of fatty acids that contain phosphate heads</p>
+<ul>
+<li><p>Have polar heads and nonpolar tails</p>
+<ul>
+<li><p>This makes them <strong>amphipathic</strong></p>
+<ul>
+<li><p>Essentially semi-polar</p></li>
+<li><p><strong>Hydrophobic (nonpolar) and hydrophilic (polar)
+</strong>at the same time (different portions of the molecule)</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Bilayer</strong></p>
+<ul>
+<li><p>Two sheets</p></li>
+<li><p>Hydrophobic tails face each other</p>
+<ul>
+<li>Form the inner center of the cell membrane</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Hydrophilic heads face away from each other</p>
+<ul>
+<li>Are on the inner and outer faces of the cell membrane</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Impermeable to large molecules, polar molecules, and/or ions</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>The phospholipid bilayer is like a fluid mosaic</p>
+<ul>
+<li><p>Fluid mosaic model yaddah yaddah</p></li>
+<li><p>Membrane proteins are freely floating and moving around</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Membrane proteins</p>
+<ul>
+<li><p>Integral membrane proteins include:</p>
+<ul>
+<li><p>Ion channels</p></li>
+<li><p>Ion pumps and transporters</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Peripheral membrane proteins include:</p>
+<ul>
+<li>Proteins associated with ion channels and ion pumps and
+transporters</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Cholesterol</strong></p>
+<ul>
+<li><p>Stabilizes membrane fluidity at all times</p>
+<ul>
+<li>Helps create a proper environment for membrane proteins and keeps
+the cell membrane functioning</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Carbohydrates</p>
+<ul>
+<li><p><strong>Glycolipids</strong></p>
+<ul>
+<li><p>Form interactions with the extracellular matrix</p></li>
+<li><p>Combination of carbohydrates and lipids</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Glycoproteins</strong></p>
+<ul>
+<li><p>Form protein-protein interactions</p></li>
+<li><p>Essential towards cell signaling and communication</p></li>
+<li><p>Combination of carbohydrates and proteins</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Integral Membrane Proteins</p>
+<ul>
+<li><p><strong>Extracellular Domain</strong></p>
+<ul>
+<li><p>Form interactions with the environment</p>
+<ul>
+<li>Ex: Receptor binding site</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Intracellular Domain</strong></p>
+<ul>
+<li><p>Responsible for intracellular signaling</p></li>
+<li><p>Form interactions with the cytoskeleton</p>
+<ul>
+<li>Anchoring the channel where it needs to be or signaling the
+structure of the neuron</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Also the part where certain things attach</p>
+<ul>
+<li>Ex: G protein of the GPCR</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Fluid Mosaic Model</strong></p>
+<ul>
+<li><p>Lipids and proteins are freely "floating" in the
+membrane</p></li>
+<li><p>Microfilaments are responsible for protein anchoring and
+migration</p></li>
+<li><p>Cholesterol is responsible for maintaining the fluidity of the
+cell membrane</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Membrane Proteins</p>
+<ul>
+<li><p>Structure</p>
+<ul>
+<li><p><strong>Primary structure</strong></p>
+<ul>
+<li>Amino acid sequence and peptide bonds</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Secondary structure</strong></p>
+<ul>
+<li><p>Shapes formed by hydrogen bonding</p>
+<ul>
+<li>Alpha-helix or beta-pleated sheet</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Tertiary structure</strong></p>
+<ul>
+<li>Additional folding and interactions formed by the R groups of the
+amino acids used to form the primary structure</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Quartenary structure</strong></p>
+<ul>
+<li><p>Association of different tertiary structures together</p>
+<ul>
+<li>Protein subunit association</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Ex: Channels</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Function</p>
+<ul>
+<li><p>Ion channels/Ionotropic receptors:</p>
+<ul>
+<li><p>Pores, gated, and selective towards certain ions only</p></li>
+<li><p>Ex: Globular ion channels are a certain type of</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Transporters (ion pumps/carriers):</p>
+<ul>
+<li><p>Dependent on ATP to function</p>
+<ul>
+<li><p>ATP causes changes in conformation to allow function</p></li>
+<li><p>Ex: Na+/K+ ion pump</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Anchoring proteins:</p>
+<ul>
+<li><p>Interact with the cytoskeleton</p>
+<ul>
+<li>Includes interactions with microfilaments, which help anchor the
+protein such as a channel into place</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Cell interactions:</p>
+<ul>
+<li><p>Junctions, adhesion, migration/maturation of cells</p>
+<ul>
+<li><p>Gap junctions, adhesive junctions</p></li>
+<li><p>Cells going up radial glia to go to certain locations
+necessary</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Metabotropic Receptors:</p>
+<ul>
+<li><p>Trigger intracellular 2nd messenger signaling cascades</p></li>
+<li><p>GPCR</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Carriers vs Channels</p>
+<ul>
+<li><p>Carriers involve a change in shape in order to carry ions past
+the cell membrane</p>
+<ul>
+<li>Some carriers do this through passive transport, others require ATP
+for these conformations</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Channels just allow ions to flow right through (like a tunnel that
+they can go through)</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Ion Channels</strong></p>
+<ul>
+<li><p>Transmembrane (Integral) Proteins</p>
+<ul>
+<li><p>Amphipathic</p></li>
+<li><p>Pore forming</p>
+<ul>
+<li>Are thus aqueous</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Channels are ion selective</p>
+<ul>
+<li><p>Have some sort of ion filter</p></li>
+<li><p>Specific or nonspecific</p>
+<ul>
+<li><p>Sometimes specific for multiple ions at the same time</p>
+<ul>
+<li>Doesn't that just make it essentially general?</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Some can straight up take anything with a charge</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Na+, K+, Cl-, Ca2+ channels</p></li>
+<li><p>Possible mechanisms involve charge, size, or with water that
+exists within the pore</p>
+<ul>
+<li><p>Size can be too big</p></li>
+<li><p>Charge can be not the right type or strength</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Gated Ion Channels</p>
+<ul>
+<li><p>Channels open and close in response to stimulus or
+conditions</p></li>
+<li><p>Possible mechanisms:</p>
+<ul>
+<li><p>Localized within a pore or general conformational change
+throughout the entire channel</p></li>
+<li><p>Ball and chain model</p>
+<ul>
+<li><p>Ball blocks one end, but sometimes isn't there</p>
+<ul>
+<li>Check the slide for additional information</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>This is localized within a specific pore</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Some channels do not have any gated mechanisms</p>
+<ul>
+<li>Are known as leak channels</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><u>More than one gate can be in a channel</u></p>
+<ul>
+<li><p>Ex: Voltage-gated AND ball and chain at the same time</p>
+<ul>
+<li>This is the thing with voltage-gated Na+ channels</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>These gating mechanisms are crucial for regulating the transmission
+of ions across the cell membrane</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Types of Ion Channels</p>
+<ul>
+<li><p>Leak</p>
+<ul>
+<li><p>No gating mechanisms, freely open and close randomly</p></li>
+<li><p><strong>RMP </strong></p>
+<ul>
+<li><p><strong>Resting membrane potential</strong></p></li>
+<li><p>Leak channels form the resting membrane potential of a neuron</p>
+<ul>
+<li>~-70mV or so</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Ligand-Gated</p>
+<ul>
+<li><p>Neurotransmitter-dependent</p></li>
+<li><p>Ion channel also doubles as a receptor molecule too</p></li>
+<li><p><strong>PSP</strong></p>
+<ul>
+<li><p><strong>Post-synaptic potentials</strong></p></li>
+<li><p>Graded potentials that occur in the post-synaptic neuron due to
+the presence of neurotransmitters and ion transportation
+occurring</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>2nd Messenger-Gated</p>
+<ul>
+<li><p>NOT METABOTROPIC</p>
+<ul>
+<li>DO NOT RESPOND TO OTHER CHEMICALS</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Phosphorylation-dependent</p>
+<ul>
+<li>When cAMP and other second messengers throw phosphate onto this
+channel, it does something</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>G-protein-gated</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Voltage-Gated</p>
+<ul>
+<li><p>Membrane potential-dependent</p>
+<ul>
+<li>Certain electrical charges cause the channel to open and close</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Voltage sensor</p></li>
+<li><p><strong>AP</strong></p>
+<ul>
+<li><strong>Action Potential</strong></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Mechanically-Gated</p>
+<ul>
+<li><p>Sensitive to the stretching and changing of the shape of the
+membrane</p>
+<ul>
+<li>Heavily related to cytoskeletal activity</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Receptor potential</strong></p>
+<ul>
+<li><p>The electrical potential formed by <u>a sensory receptor instead
+of a synaptic neuron</u></p></li>
+<li><p>This is also a type of graded potential</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Nomenclature is in the format of "type of ion channel, ion
+sensitivity"</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Ion Transporters</strong></p>
+<ul>
+<li><p>Essentially ion pumps</p></li>
+<li><p>Movement of charged particles which requires energy
+expenditure</p>
+<ul>
+<li><p>Format of active transport</p>
+<ul>
+<li>Uses ATP</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Na+/K+ pump (ATPase):</strong></p>
+<ul>
+<li><p>Pumps <strong>3 Na+ out of the cell in exchange for 2 K+ into the
+cell</strong></p>
+<ul>
+<li><p>Remember that you have <u>more potassium inside the neuron</u>
+and <u>more sodium outside of the neuron</u></p>
+<ul>
+<li>"Neurons are salty bananas"</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>The (ATPase) refers to the fact that the pump is partially an
+enzyme that removes phosphate from ATP to phosphorylate the channel</p>
+<ul>
+<li>This causes a conformational change in the channel to occur</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Helps reset ionic concentrations after action potentials
+occur</p>
+<ul>
+<li>Moves against the formed chemical concentration gradient<br />
+<br />
+<br />
+<br />
+<br />
+</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+</body>
+</html>

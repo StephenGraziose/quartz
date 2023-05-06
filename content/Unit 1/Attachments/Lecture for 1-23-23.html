@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+    sans-serif;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      background-color: #f0f0f0;
+      padding: .2em .4em;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      background-color: #f0f0f0;
+      padding: 1em;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p><br />
+<strong>Glia</strong></p>
+<ul>
+<li><p>Why care about glia?</p>
+<ul>
+<li><p>Glia are involved in many neuron processes:</p>
+<ul>
+<li><p>Neuronal scaffolding</p>
+<ul>
+<li>Making neurons grow into the shapes and also the places they need to
+be</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Metabolic support</p>
+<ul>
+<li>Provide glucose and other nutrient support</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Forming the <strong>blood-brain barrier</strong></p>
+<ul>
+<li>Regulatory barrier for protection against substances that may harm
+the brain</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Immune function</p></li>
+<li><p>Digest debris</p></li>
+<li><p>Myelination</p></li>
+<li><p>Modulate synaptic activity</p></li>
+<li><p>Many many more</p>
+<ul>
+<li>They are essentially required for basic nervous system function</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Glial cells are <strong>non-neuronal</strong> cells of the CNS
+and PNS</p>
+<ul>
+<li><p>They do not propagate action potentials at all</p>
+<ul>
+<li>They CAN have electrical activity, but not action potential worthy
+things</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>They divide in adulthood</p>
+<ul>
+<li><p>Neurons cannot</p></li>
+<li><p>Some glial cells are neuron progenitor cells</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>They are cellularly diverse</p>
+<ul>
+<li>Neurons also are diverse too</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>There are multiple types of glial cells:</p>
+<ul>
+<li><p><strong>Schwann cells</strong></p>
+<ul>
+<li><p>PNS</p></li>
+<li><p>Forms <strong>myelin sheaths</strong> around myelinated
+axons</p></li>
+<li><p>Ensheath unmyelinated axons</p></li>
+<li><p>Functions:</p>
+<ul>
+<li><p><strong>Myelination</strong></p>
+<ul>
+<li>Basically wrap their entire bodies around a segment of the axon</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><strong>Biochemical/structural support</strong> of
+myelinated/unmyelinated axons</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Some axons do not need to be myelinated, do not have a purpose
+for high-speed communication</p>
+<ul>
+<li>Schwann cells can help stabilize and assist these unmyelinated
+cells</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Structure:<br />
+</p>
+<ul>
+<li><p>Tight spiral wrapping of fused plasma membrane to form a
+<strong>sheath</strong> around larger or more intermediate-diameter
+axons</p>
+<ul>
+<li>Trojan Magnums for axons</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><u>Invaginations for small axons</u></p>
+<ul>
+<li>Done by <strong>non-myelinating Schwann cells</strong></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Oligodendrocytes</strong></p>
+<ul>
+<li><p>CNS</p>
+<ul>
+<li><p>Form myelin sheaths around CNS axons in white matter areas</p>
+<ul>
+<li>Remember that white matter is axons</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Surround neuronal cell bodies in gray matter</p>
+<ul>
+<li>Remember that gray matter is cell bodies</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Functions:</p>
+<ul>
+<li><p><strong>Myelination</strong></p>
+<ul>
+<li>Small arms of the cell encase and surround portions of the axon with
+myelin</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Metabolic support/extracellular regulation</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Structure</p>
+<ul>
+<li><p>Processes (mini arms) of the individual oligodendrocytes form
+myelin sheaths around all but the smallest axons</p></li>
+<li><p><strong>Nodes of Ranvier</strong> between myelin segments similar
+to that of the PNS</p>
+<ul>
+<li><p>These are spaces in between the myelinated segments</p>
+<ul>
+<li>Help with saltatory conduction</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Perineuronal: </strong></p>
+<ul>
+<li><p>Oligodendrocytes with no processes/myelin</p></li>
+<li><p>Up in the air with what they do</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Astrocytes</strong></p>
+<ul>
+<li><p>CNS</p>
+<ul>
+<li><p>Most abundant cell type</p></li>
+<li><p>Found throughout the CNS</p>
+<ul>
+<li><p>Neuronal cell bodies</p></li>
+<li><p>Dendrites</p></li>
+<li><p>Axons</p></li>
+<li><p>Terminals</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Form a complete lining around:</p>
+<ul>
+<li><p>Every single external surfaces of the CNS</p>
+<ul>
+<li>Ex: If nerve tissue covers the meninges or a blood vessel,
+astrocytes will be there to line that nerve tissue</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>CNS blood vessels</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Adult terminal astrocytes stay in their location, but can have a
+plastic structure</p>
+<ul>
+<li>Their processes can grow and change locations, changing which
+neurons they communicate with</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Fibrous astrocytes</strong> are found in <u>white
+matter</u></p>
+<ul>
+<li><p>Fibrous in nature and also hang out by fibers</p></li>
+<li><p>Helps out axons</p>
+<ul>
+<li>Remember, white matter is axons</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Protoplasmic astrocytes </strong>are found in <u>gray
+matter</u></p>
+<ul>
+<li><p>Can do things like feed neurons or regulate neurotransmitters,
+etc.</p>
+<ul>
+<li>Remember that cell bodies are gray matter</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Have more intermediate filaments</p>
+<ul>
+<li>Super thick non dynamic cytoskeletal proteins</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Functions:</p>
+<ul>
+<li><p>Maintenance of <strong>extracellular ionic
+environment</strong></p>
+<ul>
+<li><p>Ions are moving into the neurons to create messages</p></li>
+<li><p>This environment is regulated and supported by the
+astrocytes</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Secretion of <strong>growth factors</strong></p></li>
+<li><p><strong>Structural/metabolic support</strong></p>
+<ul>
+<li>Feeding neurons glucose and stuff</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Take up/release neurotransmitters</strong></p>
+<ul>
+<li><p>Either removes excess neurotransmitters or dumps out
+more</p></li>
+<li><p>Can prevent excitotoxicity</p>
+<ul>
+<li>Removes glutamate when it is in excess</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>This is referred to as <strong>neuromodulation</strong></p>
+<ul>
+<li><p>Using multiple different types of neurotransmitters to regulate
+communication and other forms of messaging</p></li>
+<li><p>Sometimes astrocytes dump neurotransmitters into blood vessels to
+spread neuroinflammatory signals and other messages</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Structure:</p>
+<ul>
+<li><p>Contain processes (little arms) just like oligodendrocytes</p>
+<ul>
+<li>Project and touch neuron surfaces</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Stellate, highly branched cells</p></li>
+<li><p>End-feet join together to line interfaces between CNS and other
+tissues</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Microglia</strong></p>
+<ul>
+<li><p>CNS</p>
+<ul>
+<li><p>Found in gray and white matter</p></li>
+<li><p>Hang out in the areas where they are born</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Functions:</p>
+<ul>
+<li><p><strong>Scavenging/phagocytosis of debris</strong> following cell
+injury/death</p></li>
+<li><p>Secretion of <strong>cytokines</strong></p>
+<ul>
+<li>Done a lot by reactive microglia</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><strong>Maintain homeostasis</strong></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Structure</p>
+<ul>
+<li><p><strong>Reactive microglia</strong> migrate to damaged areas and
+proliferate</p>
+<ul>
+<li>Large, amoeboid shape</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Ramified microglia</strong> survey blood/neurons/glia
+with very long processes</p></li>
+<li><p>Very tiny by comparison to other cells</p></li>
+<li><p>These two above structures appear to be like different forms of
+the microglia</p>
+<ul>
+<li><p>Normally in the ramified state, but convert to the reactive state
+when issues are detected</p>
+<ul>
+<li>Chemicals that bind to receptors on their processes are what they
+are looking for/are what they detect</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Satellite cells</strong></p>
+<ul>
+<li><p>PNS</p>
+<ul>
+<li><p>Surrounding neuron cell bodies in the PNS ganglia</p>
+<ul>
+<li><p>Reminder that ganglia are where PNS cell bodies are
+found</p></li>
+<li><p>Named because they're like satellites to PNS neurons</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Functions:</p>
+<ul>
+<li>Regulate the external chemical environment</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Structure:</p>
+<ul>
+<li><p>Small cells connected by gap junctions</p>
+<ul>
+<li>Gap junctions allow for ions and small communicating molecules to
+directly pass between cells</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>NOT star shaped</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>PNS partial counterpart of astrocytes</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Radial glia</strong></p>
+<ul>
+<li><p>CNS</p>
+<ul>
+<li><p>In the developing CNS</p></li>
+<li><p>Found in the adult retina</p></li>
+<li><p>Cerebellum</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Functions:</p>
+<ul>
+<li><p><strong>Neuronal scaffolding</strong></p>
+<ul>
+<li>Help neurons climb and grow to where they need to be</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Progenitors for neurons</p></li>
+<li><p>Adult neuronal communication/plasticity</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Structure:</p>
+<ul>
+<li>Long bipolar shape</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Ependymal Cells</strong></p>
+<ul>
+<li><p>CNS</p>
+<ul>
+<li><p>Line the spinal cord</p></li>
+<li><p>Line the brain ventricular system</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Functions:</p>
+<ul>
+<li><p>Production/circulation of CSF</p></li>
+<li><p>Formation of the blood-CSF barrier</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Structure:</p>
+<ul>
+<li>Cuboidal with cilia</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Macrophages are not glial cells, but they are the PNS counterpart
+of microglia in the CNS</p>
+<ul>
+<li>Peripheral immune system</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Overall, glial cells are essentially support cells for neurons
+that form a matrix for, support, and nourish, neurons</p></li>
+<li><p>Sample test question:</p>
+<ul>
+<li><p>Astrocytes can perform all of the following <em>EXCEPT:</em></p>
+<ul>
+<li><p>Answers can include information about location AND function</p>
+<ul>
+<li><p>This appears to be an "advanced" question according to her</p>
+<ul>
+<li>"Highest amount of information you would need to know for glial
+cells"</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Glial cells originate during prenatal development <em>(DO NOT
+NEED TO KNOW FOR TEST)</em></p>
+<ul>
+<li><p>Astrocytes and oligodendrocytes originate from the ectoderm</p>
+<ul>
+<li><p>Pyramidal neurons and interneurons also originate from the
+ectoderm</p>
+<ul>
+<li>Check the diagram, some of the cells originate from the same
+line</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Microglia originate from the mesoderm</p>
+<ul>
+<li>Check the diagram,</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Glial functions and dysfunctions <em>(DO NOT NEED TO KNOW FOR
+TEST)</em>:</p>
+<ul>
+<li><p>Myelination</p>
+<ul>
+<li><p>Why?</p>
+<ul>
+<li><p>Faster conduction through saltatory conduction</p>
+<ul>
+<li>10-30x faster</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>More efficient conduction</p></li>
+<li><p>Metabolic/structural support</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>How?</p>
+<ul>
+<li><p>Electrical insulation</p>
+<ul>
+<li><p>Increases membrane resistance</p></li>
+<li><p>Decreases membrane capacitance</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Nutrient support</p></li>
+<li><p>Saltatory conduction</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Issues:</p>
+<ul>
+<li><p>Charcot-Marie-Tooth Syndrome</p>
+<ul>
+<li><p>X-linked</p></li>
+<li><p>Mutation in myelin genes</p>
+<ul>
+<li>Ex: Connexin32</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Dysfunctional gap junctions cause impaired transfer of ions and
+nutrients across myelin to innermost myelin layers and axons</p></li>
+<li><p>Causes myelin degeneration in the PNS</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Multiple Sclerosis</p>
+<ul>
+<li><p>Autoimmune disorder</p>
+<ul>
+<li><p>Immune cells recognize myelin as foreign for some reason, attack
+and destroy</p></li>
+<li><p>Demyelination causes astrocyte plaque (sclerosis)</p></li>
+<li><p>Disrupt action potentials</p>
+<ul>
+<li>Think frayed wires</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Potential remission before plaque forms</p>
+<ul>
+<li>If plaque forms, no way to revert</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Neuromodulation</p>
+<ul>
+<li><p>Why?</p>
+<ul>
+<li><p>Synaptic plasticity</p></li>
+<li><p>Synaptogenesis</p>
+<ul>
+<li>Formation of new synapses</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Glutamate clearance/recycling</p>
+<ul>
+<li>Prevents excitotoxicity and other potential issues</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Issues:</p>
+<ul>
+<li><p>Epilepsy</p>
+<ul>
+<li><p>Recurring seizures</p>
+<ul>
+<li><p>Due to excessive neural synchronization</p>
+<ul>
+<li><p>Arises from factors within neurons</p></li>
+<li><p>Arises from factors within cellular environment</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Can be an astrocyte issue</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Neuroprotection</p>
+<ul>
+<li>Why?<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+</li>
+</ul></li>
+</ul></li>
+</ul>
+</body>
+</html>

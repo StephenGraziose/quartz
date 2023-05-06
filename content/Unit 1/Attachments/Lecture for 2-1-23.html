@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Lecture for 2-1-23</title>
+  <style>
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+    sans-serif;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      background-color: #f0f0f0;
+      padding: .2em .4em;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      background-color: #f0f0f0;
+      padding: 1em;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Lecture for 2-1-23</h1>
+</header>
+<p><br />
+<strong>Resting Membrane Potential (Part II)</strong></p>
+<ul>
+<li><p>Driving Force</p>
+<ul>
+<li><p><strong>Electrochemical driving force:</strong></p>
+<ul>
+<li><p><u>Electrical driving force + Chemical driving force</u></p></li>
+<li><p>Equation: <strong>EDFion = Vm - Eion</strong></p>
+<ul>
+<li><p>Vm = Membrane potential</p></li>
+<li><p>Eion = Ion electric potential</p></li>
+<li><p>When ions are at their equilibrium, ions would not flow across
+the membrane because their driving forces cancel out</p>
+<ul>
+<li><p>Ex: When a neuron is at the exact voltage that is that of the
+equilibrium potential of an ion, the ion will not flow inwards nor
+outwards</p>
+<ul>
+<li>No net movement</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>For potassium, if the cell has too strong of a negative membrane
+potential, it will overcome the concentration gradient and potassium
+will rush into the cell because the cell membrane is so strongly
+negative</p>
+<ul>
+<li>At rest, there is a ton of natural potassium efflux</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>For chloride, the resting membrane potential and chloride's
+equilibrium potential are nearly equal</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>This determines the direction and force of ion flow</p>
+<ul>
+<li>Direction: Inwards or outwards current</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><u>There are no Ca2+ leak channels, but it has the strongest
+driving force</u></p>
+<ul>
+<li><p><u>ECa2+ = +250mV</u></p></li>
+<li><p>This is due to a variety of reasons</p>
+<ul>
+<li><p>There is almost NO calcium ions within the neuron</p></li>
+<li><p>Calcium ions have a +2 charge</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Reminder that neurons have leak K+, Na+, and Cl- channels in their
+membranes!</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Generation of Resting Membrane Potential (RMP):</p>
+<ul>
+<li><p>Resting potential of neurons generated by <u>the combination of
+K+, Na+, and Cl- leak channels</u></p></li>
+<li><p>Resting potential is now a function of <u>both</u>:</p>
+<ul>
+<li><p><strong>Ion concentration gradients (of the three different
+ions)</strong></p></li>
+<li><p><strong>Ion permeability (P)</strong></p>
+<ul>
+<li><p>This is equal to the "weighting" factor of each ion</p></li>
+<li><p>How many leak channels are present for the ion</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p><strong>Goldman Katz equation</strong> for resting potential:</p>
+<ul>
+<li><p>Vm (at 37 degrees C) = 61.5*log((PK+[K+]o + PNa+[Na+]o +
+PCl-[Cl-]o)/(PK+[K+]i + PNa+[Na+]i + PCl-[Cl-]i))</p>
+<ul>
+<li><p>O = outside cell</p></li>
+<li><p>I = inside cell</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Essentially like an averaging for the ion equilibrium
+potentials</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Ok, but why is Vm = -60mV at rest?</p>
+<ul>
+<li><p>This is because the PK+ &gt;&gt; PNa+ and PCl-</p>
+<ul>
+<li><p>The potassium ion has a much higher ion permeability than the
+chloride or sodium ions</p>
+<ul>
+<li>There are a whole lot more potassium ion leak channels</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Different neurons have different rations of
+PK+:PNa+:PCl-</p></li>
+<li><p>Reminder that this is pretty close to EK+ (~-80mV)</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Ion Pumps</p>
+<ul>
+<li><p>Na+/K+ Pump</p>
+<ul>
+<li><p>Contains ATPase enzyme</p>
+<ul>
+<li>Dephosphorylates ATP into ADP and phosphate, and uses that phosphate
+to power itself</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Restores ion gradients after action potentials</p>
+<ul>
+<li>Basically acts as the janitor</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Maintains resting membrane potential</p></li>
+<li><p>Electrogenic</p>
+<ul>
+<li><p>3 Na+ OUT</p></li>
+<li><p>2 K+ IN</p></li>
+<li><p>Generates an outward current</p></li>
+<li><p>Hyperpolarizes the membrane</p></li>
+<li><p>Active transport, goes AGAINST the concentration
+gradient</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Cl- Pump</p>
+<ul>
+<li><p>Cl- pumped OUT</p></li>
+<li><p>Reminder that there is more Cl- outside of the cell than inside
+of the cell</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>On the exam, will get Nernst Equation or Goldman-Katz Equation
+questions</p>
+<ul>
+<li>Will need to understand how they work, what they mean, what each
+variable means</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Generating the Membrane Potential</p>
+<ul>
+<li><p>Remember how the concentration gradients work as a
+baseline</p></li>
+<li><p>Know which leak channels exist in the membrane, and in which
+proportion</p>
+<ul>
+<li><p>No Ca2+ leak channels</p></li>
+<li><p>Out of these three remaining leak channels, K+ &gt;&gt; Na+ and
+Cl-</p></li>
+</ul></li>
+</ul></li>
+</ul>
+</body>
+</html>

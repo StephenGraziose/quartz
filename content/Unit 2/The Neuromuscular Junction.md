@@ -1,0 +1,36 @@
+**The Neuromuscular Junction** consists of many specialized synapses at the motor endplate, and involve [[Acetylcholine and Acetylcholine Receptors|acetylcholine.]]
+
+### The Neuromuscular Junction (NMJ)
+- These are specialized synapses at the motor endplate
+	- Nerve-muscle synapses for motor neurons
+	- Design of the NMJ
+	- Axon terminals of presynaptic motor neuron are in the form of multiple **boutons**
+		- Boutons contain **active zones**
+			- Contain docking and fusion proteins for vesicles
+			- Contain mitochondria (energy stores)
+			- Contain synaptic vesicles (contain acetylcholine)
+	- **Post-synaptic muscle fiber**
+		- Contain **junctional folds**
+			- Increase the reliability of transmission by localization of acetylcholine receptors to the crests of the folds
+			- Enhances the effect of depolarization by localization of sodium channels in the troughs
+			- Essentially just like the cristae in the mitochondria, increases the amount of surface area for ion channels
+		- Contain **Nicotinic acetylcholine receptors**
+			- Remember that these are **ionotropic**
+				- Activation causes an action potential in muscle fibers
+					- Remember that muscle cells are electrically excitable
+	- **Basement Membrane**
+		- Contains an enzyme known as **acetylcholinesterase**
+			- This enzyme breaks down ACh into choline and acetate
+- **Endplate Potentials (EPPs)**
+	- These are the *EPSPs of the neuromuscular junction*
+- **EPP Reversal Potential**
+	- This is the membrane voltage at which **endplate current (EPC)** <u>reverses</u> in its direction
+		- $I_{Na} = I_{K}$
+			- Or, $I_{in} = I_{out}$
+	- The voltage for reverse potential = 0mV
+		- $V_{rev} = 0mV$
+	- Single channel currents here parallel whole-cell currents, except for the fact that they're square in shape
+		- Meaning, all-or-none
+	- Whole cell currents produce EPPs
+	- The direction and amplitude of the current is the sum of its constituent ionic currents
+		- Constituent ionic current is a function of the **driving force** on each of the ions involved
