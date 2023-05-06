@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>-</title>
+  <style>
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, Segoe UI,
+    sans-serif;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 12px;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      html {
+        background-color: white;
+      }
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, Consolas, 'Lucida Console', monospace;
+      background-color: #f0f0f0;
+      padding: .2em .4em;
+      font-size: 85%;
+      margin: 0;
+      hyphens: manual;
+    }
+    pre {
+      margin: 1em 0;
+      background-color: #f0f0f0;
+      padding: 1em;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<p><br />
+<strong>Synaptic Modulation (Part II)</strong></p>
+<ul>
+<li><p>GPCRs vs Ionotropic Receptors</p>
+<ul>
+<li><p>Ionotropic Receptors</p>
+<ul>
+<li><p>Activation leads to channel opening ONLY</p></li>
+<li><p>Local actions (as in, only at the synapse)</p></li>
+<li><p>Rapid on-off response</p></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Metabotropic Receptors</p>
+<ul>
+<li><p>Activation can lead to the opening OR closing of
+channels</p></li>
+<li><p>Actions can occur distant from receptors</p>
+<ul>
+<li>Diffusable messengers</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Amplification of signals</p>
+<ul>
+<li>One GPCR can signal to multiple G proteins in a singular neuron</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Prolonged response: Opening or closing of channels</p>
+<ul>
+<li>This causes changes in membrane potential occurring</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Changes in membrane resistance</p>
+<ul>
+<li>Basically just changes in the membrane's responsivity based on Ohm's
+Law (V = IR)</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Metabotropic receptors cause slow synaptic "modulation"</p>
+<ul>
+<li><p>In contrast to fast excitation/inhibition by glutamate and GABA,
+metabtropic receptors cause slower modulation of synapses</p>
+<ul>
+<li><p>Slower onset, slower offset</p></li>
+<li><p>Slow because it takes a minute for the intracellular signaling
+cascade to do its thing</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>GABA Activation of GABAa and GABAb receptors</p>
+<ul>
+<li><p>So basically GABA receptors are like a dimer between
+<strong>GABAa and GABAb</strong></p></li>
+<li><p>Fast IPSP: GABAaR's</p>
+<ul>
+<li>These are <u>ionotropic</u> receptors</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Slow IPSP: GABAbR's</p>
+<ul>
+<li>These are <u>metabotropic</u> receptors</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Postsynaptic Modulation</p>
+<ul>
+<li><p>Axosomatic and axodendritic synapses</p>
+<ul>
+<li><p>Depolarization and hyperpolarization of postsynaptic
+cell</p></li>
+<li><p>Increase/decrease in conductance (such as the opening or closing
+of channels)</p></li>
+<li><p>Ex: Glutamate and GABA</p>
+<ul>
+<li><p>Glutamate</p>
+<ul>
+<li>Metabotropic glutamate receptors <strong>(mGluRs)</strong> --&gt;
+Closing of K+ channels --&gt; Depolarization --&gt; Excitation</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>GABA</p>
+<ul>
+<li>GABAb receptors --&gt; Opening of K+ channels --&gt;
+Hyperpolarization --&gt; Inhibition</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Presynaptic Modulation</p>
+<ul>
+<li><p>Axoaxonic synapses OR retrograde messenger actions</p>
+<ul>
+<li><p>Increases/decreases in neurotransmitter release</p>
+<ul>
+<li>All regulated by the probability of neurotransmitter release</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Presynaptic metabotropic glutamate receptors</p>
+<ul>
+<li>Cause decrease in glutamate release and decrease in GABA
+release</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Presynaptic GABAb receptors</p>
+<ul>
+<li>Cause decrease in GABA release and decrease in glutamate
+release</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Effects of Ca2+ channels on synaptic proteins</p>
+<ul>
+<li><p>Metabotropic glutamate receptors inhibit synaptic
+proteins</p></li>
+<li><p>GABAb receptors inhibit Ca2+ channels</p></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Presynaptic modulation through spillover</p>
+<ul>
+<li><p><strong>Spillover </strong>is the process that occurs when excess
+neurotransmitters are released from a neuron into the synaptic cleft and
+some of the neurotransmitters exit the cleft.</p>
+<ul>
+<li><p>These neurotransmitters can bind to GPCRs for other neurons or
+even the same neuron</p>
+<ul>
+<li>This leads to a release in GABA that inhibits the initial
+neuron</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Basically, my cup runneth over.</p>
+<ul>
+<li>Or diarrhea in your pants</li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>This only works with GABA!</p>
+<ul>
+<li>This is an inhibitory thing!</li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li><p>Presynaptic modulation through retrograde messengers</p>
+<ul>
+<li><p><strong>Retrograde messengers</strong> are neurotransmitters that
+originally are released from a presynaptic neuron and bind to a
+postsynaptic neuron's receptor on their cell membrane</p>
+<ul>
+<li><p>Just like regular, you know?</p></li>
+<li><p>BUT THEN, the postsynaptic cell shits out an endocannabinoid
+molecule that binds to the presynaptic cell and causes additional
+glutamate release</p>
+<ul>
+<li><p>This only really occurs with glutamate, and causes less
+excitation in the presynaptic neuron</p>
+<ul>
+<li>Can cause less future action potentials then</li>
+</ul></li>
+</ul></li>
+</ul></li>
+</ul>
+<p> </p>
+<ul>
+<li>Kinda like a clap back<br />
+<br />
+</li>
+</ul></li>
+</ul>
+</body>
+</html>
